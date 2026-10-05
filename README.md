@@ -89,6 +89,7 @@ The ALU was implemented in synthesizable Verilog using combinational logic.
 Source:
 
 rtl/alu_4bit.v
+
 2. Functional Verification
 
 A self-checking Verilog testbench was developed to verify all supported ALU operations and important corner cases.
@@ -121,6 +122,7 @@ The design was subsequently mapped to the SKY130 HD standard-cell library.
 Mapped netlist:
 
 synth/alu_4bit_sky130.v
+
 4. Floorplanning
 
 OpenROAD was used to create the initial floorplan.
@@ -159,6 +161,7 @@ Post-route parasitic extraction was performed using OpenROAD RCX with the SKY130
 Generated SPEF:
 
 pd/alu_4bit_nominal.spef
+
 8. Post-Route Static Timing Analysis
 
 Post-route timing analysis was performed using the extracted parasitics.
@@ -199,7 +202,9 @@ Total negative slack	0 ns
 Critical-path delay	~3.52 ns
 Physical DRC violations	0
 GDSII generated	Yes
+
 Repository Structure
+
 alu-4bit-rtl-to-gds/
 │
 ├── rtl/
@@ -231,6 +236,7 @@ alu-4bit-rtl-to-gds/
 │
 ├── .gitignore
 └── README.md
+
 What I Learned
 
 This project provided hands-on experience with:
