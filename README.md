@@ -29,7 +29,7 @@ The Carry output is meaningful for the addition operation, while Zero indicates 
 
 ## RTL-to-GDSII Flow
 
-`text
+```text
 Verilog RTL
     │
     ▼
