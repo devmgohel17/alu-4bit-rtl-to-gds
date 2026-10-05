@@ -61,7 +61,7 @@ Physical DRC (Magic)
     │
     ▼
 GDSII
-
+```
  | Category              | Tool / Technology    |
 | --------------------- | -------------------- |
 | RTL                   | Verilog              |
@@ -231,7 +231,7 @@ alu-4bit-rtl-to-gds/
 │
 ├── .gitignore
 └── README.md
-
+```
 What I Learned
 
 This project provided hands-on experience with:
