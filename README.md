@@ -29,7 +29,8 @@ The Carry output is meaningful for the addition operation, while Zero indicates 
 
 ## RTL-to-GDSII Flow
 
-┌Verilog RTL
+`text
+Verilog RTL
     │
     ▼
 RTL Functional Simulation
@@ -198,6 +199,7 @@ GDSII generated	Yes
 
 Repository Structure
 
+```text
 alu-4bit-rtl-to-gds/
 │
 ├── rtl/
