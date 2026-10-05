@@ -1,0 +1,29 @@
+#Simulation
+sim/*.vcd
+sim/alu_4bit
+sim/alu_4bit_sky130_tb 
+
+#OpenROAD temporary files
+*.tmp
+*.log
+*.rpt
+*.maze.log
+*.guide
+
+# Editor / OS
+*.swp
+*~
+.DS_Store
+
+# LVS / extraction artifacts
+*.ext
+alu_4bit_lvs.spice
+synth/alu_4bit_reference.spice
+pd/run_lvs.tcl
+
+# Simulation executable
+sim/alu_4bit
+
+# Simulation output
+sim/*
+!sim/alu_4bit_tb.v

@@ -1,0 +1,21 @@
+read_verilog rtl/alu_4bit.v
+
+# Convert processes and optimize
+proc
+opt
+
+# Technology mapping
+techmap
+opt
+
+# Map generic logic to Sky130 standard cells
+abc -liberty /home/dev/.ciel/ciel/sky130/versions/1689ac3f2dc763876eaf967227c7dfe831b031ae/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# Clean up
+opt
+
+# Show statistics
+stat
+
+# Write mapped netlist
+write_verilog -noattr synth/alu_4bit_sky130.v
