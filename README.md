@@ -29,68 +29,37 @@ The Carry output is meaningful for the addition operation, while Zero indicates 
 
 ## RTL-to-GDSII Flow
 
-┌─────────────────────────┐
-│      Verilog RTL        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ RTL Functional          │
-│ Simulation              │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Logic Synthesis         │
-│        (Yosys)          │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ SKY130 Standard-Cell    │
-│ Mapping                 │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Floorplanning           │
-│       (OpenROAD)        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Placement               │
-│       (OpenROAD)        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Routing                 │
-│       (OpenROAD)        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Parasitic Extraction    │
-│         / SPEF          │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Post-Route STA          │
-│       (OpenROAD)        │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Physical DRC            │
-│        (Magic)          │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│         GDSII           │
-└─────────────────────────┘
+┌Verilog RTL
+    │
+    ▼
+RTL Functional Simulation
+    │
+    ▼
+Logic Synthesis (Yosys)
+    │
+    ▼
+SKY130 Standard-Cell Mapping
+    │
+    ▼
+Floorplanning (OpenROAD)
+    │
+    ▼
+Placement (OpenROAD)
+    │
+    ▼
+Routing (OpenROAD)
+    │
+    ▼
+Parasitic Extraction / SPEF
+    │
+    ▼
+Post-Route STA (OpenROAD)
+    │
+    ▼
+Physical DRC (Magic)
+    │
+    ▼
+GDSII
 
  | Category              | Tool / Technology    |
 | --------------------- | -------------------- |
